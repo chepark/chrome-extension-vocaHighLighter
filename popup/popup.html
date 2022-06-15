@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Ubuntu', sans-serif;
+      }
+
+      .header_title {
+        font-family: 'Righteous', cursive;
+        letter-spacing: 1px;
+      }
+    </style>
+    <title>Voca-Highlighter</title>
+  </head>
+  <body>
+    <div class="popupBox">
+      <div class="header_container">
+        <h1 class="header_title">Voca-Highlighter</h1>
+        <div class="header_btn">
+          <p class="btn_title">Enabled:</p>
+          <div class="btn_toggle">
+            <label class="switch">
+              <input id="btn_input" type="checkbox" name="appBtn" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="main_container">
+        <p id="main_title">Saved words:</p>
+        <form id="main_form"></form>
+        <button id="removeBtn">Remove item(s)</button>
+      </div>
+    </div>
+    <script src="./popup.js"></script>
+  </body>
+</html>
